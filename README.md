@@ -1,4 +1,7 @@
-# rusty-bc250-atx
+# Rusty BC250 ATX
+
+![rusty-bc250-atx_00](assets/rusty-bc250-atx_00.webp)
+
 
 ATX PSU soft-power adapter for the AMD BC250 mining board.
 The BC250 lacks native ATX PS_ON circuitry; this firmware bridges that gap using a CH32V003 microcontroller.
@@ -12,6 +15,15 @@ The BC250 lacks native ATX PS_ON circuitry; this firmware bridges that gap using
 | Power button | Debounced momentary button with short-press / long-press detection |
 | Force off | 4-second hold → hard-cut ATX PS_ON regardless of HOST_ON state |
 | LED output | Power status indicator (15 mA limited; J1 bypass up to 250 mA) |
+
+## Board Assembly
+
+The prototype PCB shown below was manufactured using a 3D printer.
+- [sch/](sch/rusty-bc250-atx/) — KiCad schematic and PCB design
+- [pcb_3dprint/](pcb_3dprint/) — STL and OpenSCAD files for 3D-printed PCB prototyping
+
+![rusty-bc250-atx_01](assets/rusty-bc250-atx_01.webp)
+![rusty-bc250-atx_02](assets/rusty-bc250-atx_02.webp)
 
 ## Power State Machine
 
