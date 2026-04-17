@@ -1,12 +1,12 @@
 [package]
-name = "ch32-bc250-atx"
+name = "rusty-bc250-atx"
 version = "0.1.0"
 authors = ["Homin Lee <i@homin.dev>"]
 edition = "2024"
 license = "MIT"
 
 [[bin]]
-name = "ch32-bc250-atx"
+name = "rusty-bc250-atx"
 harness = false # do not use the built in cargo test harness -> resolve rust-analyzer errors
 
 [dependencies]

@@ -18,3 +18,8 @@ target/
 # Agents
 .claude/
 .agents/
+
+# KiCad
+sch/rusty-bc250-atx/.history/
+sch/rusty-bc250-atx/*-backups/
+sch/rusty-bc250-atx/~*

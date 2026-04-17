@@ -93,4 +93,9 @@ impl ButtonState {
     pub fn is_in_warn(&self) -> bool {
         self.warn_fired && !self.long_fired
     }
+
+    /// `true` while the button is stably pressed (debounced).
+    pub fn is_pressed(&self) -> bool {
+        self.stable_pressed
+    }
 }

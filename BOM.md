@@ -1,4 +1,4 @@
-# Bill of Materials — ch32-bc250-atx
+# Bill of Materials — rusty-bc250-atx
 
 | Ref | Description | Value / Part | Package | Qty |
 |-----|-------------|--------------|---------|-----|
@@ -11,10 +11,9 @@
 | SW1 | Power button | Momentary SPST | 6×6 mm THT | 1 |
 | J1  | LED resistor bypass jumper | Solder jumper | — | 1 |
 | J2  | ATX connector (PS_ON + GND) | 2-pin header | 2.54 mm | 1 |
-| J3  | BC250 power-button pad connector | 2-pin header | 2.54 mm | 1 |
-| J4  | Power LED connector | 2-pin header | 2.54 mm | 1 |
-| J5  | HOST_ON input connector | 2-pin header | 2.54 mm | 1 |
-| J6  | 5 V SB power input (ATX pin 9) | 2-pin header | 2.54 mm | 1 |
+| J3  | Power LED connector | 2-pin header | 2.54 mm | 1 |
+| J4  | HOST_ON input connector | 2-pin header | 2.54 mm | 1 |
+| J5  | 5 V SB power input (ATX pin 9) | 2-pin header | 2.54 mm | 1 |
 
 ## Notes
 

@@ -9,8 +9,6 @@ pub enum PowerState {
     PoweringOn,
     /// BC250 is running normally.
     Running,
-    /// Soft-off requested; BTN_OUT pulse sent; waiting for HOST_ON to fall.
-    SoftOff,
 }
 
 /// Tracks the current state and per-state timing.

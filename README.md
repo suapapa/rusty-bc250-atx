@@ -1,4 +1,4 @@
-# ch32-bc250-atx
+# rusty-bc250-atx
 
 ATX PSU soft-power adapter for the AMD BC250 mining board.
 The BC250 lacks native ATX PS_ON circuitry; this firmware bridges that gap using a CH32V003 microcontroller.
@@ -12,7 +12,6 @@ The BC250 lacks native ATX PS_ON circuitry; this firmware bridges that gap using
 | Power button | Debounced momentary button with short-press / long-press detection |
 | Force off | 4-second hold → hard-cut ATX PS_ON regardless of HOST_ON state |
 | LED output | Power status indicator (15 mA limited; J1 bypass up to 250 mA) |
-| BTN_OUT | Route button pulse to BC250 power-button solder pads |
 
 ## Power State Machine
 
@@ -25,14 +24,9 @@ POWERING_ON
  └─ timeout 5 s ──────────→ de-assert PS_ON ──→ IDLE   (PSU failed to start)
 
 RUNNING
- ├─ short press ──────────→ pulse BTN_OUT ──→ SOFT_OFF
  ├─ hold 3 s ─────────────→ LED fast-blink warning
  ├─ hold 4 s ─────────────→ force de-assert PS_ON ──→ IDLE
  └─ HOST_ON lost 500 ms ──→ de-assert PS_ON ──→ IDLE
-
-SOFT_OFF
- ├─ HOST_ON high ─────────→ de-assert PS_ON ──→ IDLE
- └─ timeout 10 s ─────────→ de-assert PS_ON ──→ IDLE   (BC250 hung)
 ```
 
 ## Hardware

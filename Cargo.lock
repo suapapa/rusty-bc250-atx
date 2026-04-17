@@ -33,19 +33,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
-name = "ch32-bc250-atx"
-version = "0.1.0"
-dependencies = [
- "ch32-hal",
- "embassy-executor",
- "embassy-time",
- "embedded-hal 1.0.0",
- "panic-halt",
- "qingke",
- "qingke-rt",
-]
-
-[[package]]
 name = "ch32-hal"
 version = "0.1.0"
 source = "git+https://github.com/ch32-rs/ch32-hal.git#2ed4f3cab40f42b81d7355f1632ae4cb9ad4d5f1"
@@ -589,6 +576,19 @@ name = "riscv-pac"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8188909339ccc0c68cfb5a04648313f09621e8b87dc03095454f1a11f6c5d436"
+
+[[package]]
+name = "rusty-bc250-atx"
+version = "0.1.0"
+dependencies = [
+ "ch32-hal",
+ "embassy-executor",
+ "embassy-time",
+ "embedded-hal 1.0.0",
+ "panic-halt",
+ "qingke",
+ "qingke-rt",
+]
 
 [[package]]
 name = "sdio-host"
