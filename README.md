@@ -2,6 +2,7 @@
 
 ![rusty-bc250-atx_00](assets/rusty-bc250-atx_00.webp)
 
+- [In Action Video](https://www.youtube.com/watch?v=EkOmVfLqIu4)
 
 ATX PSU soft-power adapter for the AMD BC250 mining board.
 The BC250 lacks native ATX PS_ON circuitry; this firmware bridges that gap using a CH32V003 microcontroller.
